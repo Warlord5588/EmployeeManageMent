@@ -40,6 +40,8 @@
           <v-btn icon @click="toggleMenu">
           <v-icon>{{ menuIcon }}</v-icon>
         </v-btn>
+
+        <p style="position: relative; left: 70px; top: -30px; font-family: 'Roboto'; font-style: normal; font-weight: 1000; font-size: 25px; line-height: 20px; color: #454957;">Employee List</p>
         <br>
         <br>
   
