@@ -1,44 +1,17 @@
-# default
+หลังจากที่ Clone ไฟล์แล้วให้ทำการพิมพ์คำสั่ง
 
-## Project setup
+cd EmployeeManageMent
 
-```
-# yarn
-yarn
+จากนั้นพิมพ์คำสั่งเพื่อติดตั้ง module ที่จำเป็น
 
-# npm
 npm install
 
-# pnpm
-pnpm install
-```
+ต่อด้วย
 
-### Compiles and hot-reloads for development
+npm install vuetify
 
-```
-# yarn
-yarn dev
+เมื่อลงเสร็จสิ้นใช้คำสั่ง
 
-# npm
 npm run dev
 
-# pnpm
-pnpm dev
-```
-
-### Compiles and minifies for production
-
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
+เพื่อสั่งรันและเข้าใช้งานผ่าน local:host
