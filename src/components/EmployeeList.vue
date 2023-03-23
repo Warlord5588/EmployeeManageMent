@@ -6,10 +6,17 @@
         <v-toolbar-title></v-toolbar-title>
         <v-spacer></v-spacer>
   
-        <v-col cols="12" sm="6" md="4" h-25 w-25>
-          <v-text-field v-model="search" label="Search" @input="searchEmployees"></v-text-field>
-        </v-col>
+        <div style="position: absolute; width: 204px; height: 36px; right: 309px; top: 5px;">
+            <v-text-field v-model="search" label="Search" @input="searchEmployees"></v-text-field>>
+        </div>
+
+        <div style="position: absolute; width: 1px; height: 36px; right: 284px; top: 18px; background: #E8E8EA;"/>
         
+        <div style="position: absolute; width: 28px; height: 28px; right: 232px; top: 12px;"><v-btn icon="mdi-chat-processing-outline"/></div>
+        <div style="position: absolute; width: 28px; height: 28px; right: 180px; top: 12px;"><v-btn icon="mdi-bell-circle-outline"/></div>
+        <div style="position: absolute; width: 28px; height: 28px; right: 128px; top: 12px;"><v-btn icon="mdi-help-circle-outline"/></div>
+        <div style="position: absolute; width: 28px; height: 28px; right: 76px; top: 12px;"><v-btn icon="mdi-apps"/></div>
+        <div style="position: absolute; width: 28px; height: 28px; right: 24px; top: 12px;"><v-btn icon="mdi-account-circle"/></div>
         
       </v-app-bar>
       <!-- nav bar section -->
@@ -36,17 +43,8 @@
         <br>
         <br>
   
-      <v-card>
-        <v-card-title>Employee Filter</v-card-title>
-        <v-card-text>
-          <v-row>
-            <v-col cols="12" md="4">
-              <v-select v-model="department" :items="departments" label="Department" outlined dense />
-            </v-col>
-          </v-row>
-        </v-card-text>
-      </v-card>
-  
+        <v-select v-model="department" :items="departments" label="Department" outlined dense />
+              
       <v-card>
         <v-card-text>
             <template v-slot:default>
