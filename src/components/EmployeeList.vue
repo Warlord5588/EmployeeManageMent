@@ -44,24 +44,27 @@
         <br>
   
         <v-select v-model="department" :items="departments" label="Department" outlined dense />
+
+        
               
       <v-card>
         <v-card-text>
             <template v-slot:default>
-  
-                      Name
-                      Department
-                      Salary
-                      Hired Date
-  
+                  
+                    <p class="hemp_name">Name</p>
+                    <p class="hemp_dep">Department</p>
+                    <p class="hemp_sal">Salary</p>
+                    <p class="hemp_hire">Hired Date</p>
                   <br>
                   <draggable v-model="visibleEmployees" handle=".drag-handle">
                   <v-card v-for="employee in visibleEmployees" :key="employee.id" class="drag-handle">
                 <v-card-text>
-                  {{ employee.name }}
-                  {{ employee.department }}
-                  {{ employee.salary }}
-                  {{ employee.hiredDate }}
+                    <v-btn icon="mdi-account-circle" style="position: absolute; width: 20px; height: 20px; left: 20px; top: 5px; background: #F8F8F9; border-radius: 4px;"/>
+                    <p class="emp_name"> {{ employee.name }} </p>
+                    <p class="emp_dep"> {{ employee.department }} </p>
+                    <p class="emp_sal"> {{ employee.salary }} </p>
+                    <p class="emp_hire"> {{ employee.hiredDate }} </p>
+                    <v-btn icon="mdi-dots-horizontal" style="position: absolute; width: 16px; height: 16px; left: 1675px; top: 5px; background: #F8F8F9; border-radius: 4px;"/>
                  </v-card-text>
               </v-card>
             </draggable>
@@ -158,4 +161,125 @@
     margin: 10px;
     background-color: #fff;
   }
+
+  .emp_name{
+    position: absolute;
+    width: 103px;
+    height: 20px;
+    left: 66px;
+    top: 7px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #454957;
+  }
+
+  .emp_dep{
+    position: absolute;
+    width: 73px;
+    height: 20px;
+    left: 272px;
+    top: 7px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #454957;
+  }
+
+  .emp_sal{
+    position: absolute;
+    width: 58px;
+    height: 20px;
+    left: 525px;
+    top: 7px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #454957;
+  }
+
+  .emp_hire{
+    position: absolute;
+    width: 125px;
+    height: 20px;
+    left: 750px;
+    top: 7px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #454957;
+  }
+
+  .hemp_name{
+    position: absolute;
+    width: 103px;
+    height: 20px;
+    left: 95px;
+    top: 7px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 13px;
+    line-height: 20px;
+    color: #454957;
+  }
+
+  .hemp_dep{
+    position: absolute;
+    width: 73px;
+    height: 20px;
+    left: 300px;
+    top: 7px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 13px;
+    line-height: 20px;
+    color: #454957;
+  }
+
+  .hemp_sal{
+    position: absolute;
+    width: 58px;
+    height: 20px;
+    left: 553px;
+    top: 7px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 13px;
+    line-height: 20px;
+    color: #454957;
+  }
+
+  .hemp_hire{
+    position: absolute;
+    width: 125px;
+    height: 20px;
+    left: 775px;
+    top: 7px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 13px;
+    line-height: 20px;
+    color: #454957;
+  }
+
   </style>
