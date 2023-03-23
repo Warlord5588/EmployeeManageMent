@@ -48,14 +48,12 @@
     <v-card>
       <v-card-text>
           <template v-slot:default>
-                <v-card>
-                  <v-card-text>
+
                     Name
                     Department
                     Salary
                     Hired Date
-                  </v-card-text>
-                </v-card>
+
                 <br>
                 <draggable v-model="visibleEmployees" handle=".drag-handle">
                 <v-card v-for="employee in visibleEmployees" :key="employee.id" class="drag-handle">
