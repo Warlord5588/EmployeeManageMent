@@ -33,6 +33,8 @@
         <v-btn icon @click="toggleMenu">
         <v-icon>{{ menuIcon }}</v-icon>
       </v-btn>
+      <br>
+      <br>
 
     <v-card>
       <v-card-title>Employee Filter</v-card-title>
